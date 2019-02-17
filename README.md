@@ -2,7 +2,8 @@
 
 here's a qualitatively replication of [1] -- by the end of training, the model's prediction error peaks right after word/event boundaries.  
 
-`rnn_pnl_sl.ipynb` uses <a href="https://princetonuniversity.github.io/PsyNeuLink/">psyneulink</a> (tested on the `psyneulink/devel`, 02/17/2019) and `rnn_sl.ipynb` uses pytroch 
+`rnn_pnl_sl.ipynb` uses <a href="https://princetonuniversity.github.io/PsyNeuLink/">psyneulink</a> (tested on the `psyneulink/devel`, 02/17/2019) and `rnn_sl.ipynb` uses pytroch
+these two versions are not meant to be quantitatively matched 
 
 
 <br>
