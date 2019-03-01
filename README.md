@@ -13,4 +13,5 @@ these two versions are not meant to be quantitatively matched
 References: 
 
 [1] Elman, J. L. (1990). Finding structure in time. Cognitive Science, 14(2), 179–211. https://doi.org/10.1016/0364-0213(90)90002-E
+
 [2] Saffran, J. R., Aslin, R. N., & Newport, E. L. (1996). Statistical learning by 8-month-old infants. Science, 274(5294), 1926–1928. https://doi.org/10.1126/science.274.5294.1926
