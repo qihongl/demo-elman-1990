@@ -2,11 +2,17 @@
 
 here's a qualitatively replication of [1] -- by the end of training, the model's prediction error peaks right after word/event boundaries. the design of the experiment is inspired by [2]. 
 
+
+Play with the model: pytorch <a href="https://colab.research.google.com/github/qihongl/demo-elman-1990/blob/master/elman_pytorch.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab" title="Open and Execute in Google Colaboratory">
+</a>; 
+psyneulink <a href="https://colab.research.google.com/github/qihongl/demo-elman-1990/blob/master/elman_pnl.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab" title="Open and Execute in Google Colaboratory">
+</a>
+- these two versions are not meant to be quantitatively matched 
+
+
 <img src="https://github.com/qihongl/demo-elman-1990/blob/master/imgs/pe.png" alt="PE over time">
-
-
-`rnn_pnl_sl.ipynb` uses <a href="https://princetonuniversity.github.io/PsyNeuLink/">psyneulink</a> (tested on the `psyneulink/devel`, 02/17/2019) and `rnn_sl.ipynb` uses pytroch.
-these two versions are not meant to be quantitatively matched 
 
 
 <br>
