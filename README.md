@@ -25,11 +25,11 @@ Within each word, the next syllable is certain. At a word boundary, any of the o
 
 ## Prediction error over time
 
-![Prediction error over a held-out syllable stream, with words and boundaries labeled](imgs/pe.png)
+![Prediction error over a held-out syllable stream, with words and boundaries labeled](imgs/saffran-one-pass-prediction-error.png)
 
 The black line is mean **surprisal in bits**, −log₂ P(the incoming syllable | preceding syllables), across five independently trained models. The gray error band is a **pointwise 95% bootstrap confidence interval for the model mean**, using 10,000 resamples of model seeds. Every model receives just one 540-syllable exposure. No synthetic noise or temporal smoothing is applied. Dashed lines mark boundaries, and the word labels identify each three-syllable chunk. **Boundary-crossing errors appear on the first syllable of the next word.** Error heights vary, and within-word errors remain above zero because the model is only partially trained.
 
-The figure shows eight consecutive words after four warm-up words, selected by a fixed window rather than by model performance. The numerical summary uses the entire held-out 540-syllable stream, excluding only its first syllable because it has no preceding context. See the [standalone figure caption](imgs/pe.caption.md) for the sampling and uncertainty definitions.
+The figure shows eight consecutive words after four warm-up words, selected by a fixed window rather than by model performance. The numerical summary uses the entire held-out 540-syllable stream, excluding only its first syllable because it has no preceding context. See the [standalone figure caption](imgs/saffran-one-pass-prediction-error.caption.md) for the sampling and uncertainty definitions.
 
 <!-- RESULTS_TABLE_START -->
 | Transition | Five-model mean (bits) | 95% CI for mean |
@@ -66,7 +66,7 @@ python saffran_demo.py --seeds 0
 
 Rerun the default command to restore the five-model mean, error band, and numerical summary. Outputs:
 
-- [`imgs/pe.png`](imgs/pe.png): 300-DPI figure, with a separate caption.
+- [`imgs/saffran-one-pass-prediction-error.png`](imgs/saffran-one-pass-prediction-error.png): 300-DPI figure, with a separate caption.
 - [`results/prediction_errors.csv`](results/prediction_errors.csv): target-aligned error, syllable, word, and boundary metadata for every test prediction and model seed.
 - [`results/training_loss.csv`](results/training_loss.csv): training loss for every update.
 - [`results/summary.json`](results/summary.json): configuration, versions, full test word order, empirical transition probabilities, per-model summaries, and confidence intervals.

@@ -290,7 +290,7 @@ def run(config: Config, output_dir: Path):
         writer.writerows((seed, step + 1, min((step + 1) * config.chunk_size, len(test.tokens) - 1), value)
                          for seed, h in zip(config.seeds, histories)
                          for step, value in enumerate(h))
-    plot_prediction_error(errors, test, output_dir.parent / "imgs" / "pe.png",
+    plot_prediction_error(errors, test, output_dir.parent / "imgs" / "saffran-one-pass-prediction-error.png",
                           model_seed=config.seeds[0], training_config=config)
     print(json.dumps(summary, indent=2), flush=True)
     return errors, test, metadata

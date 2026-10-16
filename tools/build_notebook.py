@@ -50,7 +50,7 @@ This notebook is self-contained and needs no repository download in Colab.
     nbf.v4.new_code_cell(setup, metadata={"jupyter": {"source_hidden": True}}),
     nbf.v4.new_code_cell(source[plot_start:], metadata={"jupyter": {"source_hidden": True}}),
     nbf.v4.new_code_cell("errors, test_stream, result = run(Config(), Path('results'))"),
-    nbf.v4.new_code_cell("from IPython.display import Image, display\ndisplay(Image(filename='imgs/pe.png'))\nprint(Path('imgs/pe.caption.md').read_text())"),
+    nbf.v4.new_code_cell("from IPython.display import Image, display\ndisplay(Image(filename='imgs/saffran-one-pass-prediction-error.png'))\nprint(Path('imgs/saffran-one-pass-prediction-error.caption.md').read_text())"),
     nbf.v4.new_markdown_cell("""## Interpretation
 
 Within each word, the next syllable is fixed. Across word boundaries, the next word
