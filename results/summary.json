@@ -1,0 +1,403 @@
+{
+  "config": {
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "chunk_size": 16,
+    "copies_per_word": 45,
+    "hidden_size": 32,
+    "learning_rate": 0.01,
+    "test_seed": 2026
+  },
+  "words": {
+    "tupiro": [
+      "tu",
+      "pi",
+      "ro"
+    ],
+    "golabu": [
+      "go",
+      "la",
+      "bu"
+    ],
+    "bidaku": [
+      "bi",
+      "da",
+      "ku"
+    ],
+    "padoti": [
+      "pa",
+      "do",
+      "ti"
+    ]
+  },
+  "summary": {
+    "boundary": {
+      "mean_bits": 2.0065090656280518,
+      "per_seed_bits": [
+        1.9906038045883179,
+        2.0523247718811035,
+        2.06986403465271,
+        1.9642388820648193,
+        1.9555128812789917
+      ],
+      "ci95_bits": [
+        1.9660215377807617,
+        2.0469963550567627
+      ],
+      "transitions_per_seed": 179
+    },
+    "within_word": {
+      "mean_bits": 0.7189310193061829,
+      "per_seed_bits": [
+        0.5825459957122803,
+        0.7944643497467041,
+        0.824806272983551,
+        0.5489645004272461,
+        0.8438740372657776
+      ],
+      "ci95_bits": [
+        0.6114970445632935,
+        0.8263649940490723
+      ],
+      "transitions_per_seed": 360
+    }
+  },
+  "metric": "-log2 P(incoming target syllable | preceding syllables)",
+  "training_passes": 1,
+  "training_streams_per_seed": 1,
+  "training_stream_seeds": {
+    "0": 4294967296,
+    "1": 4294967297,
+    "2": 4294967298,
+    "3": 4294967299,
+    "4": 4294967300
+  },
+  "training_syllables_per_seed": 540,
+  "training_targets_per_seed": 539,
+  "optimizer_updates_per_seed": 34,
+  "nominal_training_stimulus_minutes_at_270_syllables_per_minute": 2.0,
+  "plotted_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "plotted_series": "mean across model seeds with pointwise 95% bootstrap CI; fixed test window",
+  "test_syllables": 540,
+  "test_word_sequence": [
+    "tupiro",
+    "bidaku",
+    "golabu",
+    "bidaku",
+    "golabu",
+    "padoti",
+    "bidaku",
+    "tupiro",
+    "bidaku",
+    "tupiro",
+    "padoti",
+    "bidaku",
+    "golabu",
+    "padoti",
+    "golabu",
+    "padoti",
+    "golabu",
+    "tupiro",
+    "golabu",
+    "tupiro",
+    "bidaku",
+    "golabu",
+    "padoti",
+    "tupiro",
+    "bidaku",
+    "golabu",
+    "tupiro",
+    "bidaku",
+    "golabu",
+    "tupiro",
+    "golabu",
+    "padoti",
+    "bidaku",
+    "golabu",
+    "bidaku",
+    "padoti",
+    "golabu",
+    "bidaku",
+    "padoti",
+    "tupiro",
+    "padoti",
+    "tupiro",
+    "golabu",
+    "padoti",
+    "tupiro",
+    "bidaku",
+    "golabu",
+    "tupiro",
+    "padoti",
+    "golabu",
+    "bidaku",
+    "golabu",
+    "bidaku",
+    "golabu",
+    "bidaku",
+    "padoti",
+    "golabu",
+    "bidaku",
+    "tupiro",
+    "padoti",
+    "golabu",
+    "tupiro",
+    "bidaku",
+    "tupiro",
+    "padoti",
+    "bidaku",
+    "tupiro",
+    "bidaku",
+    "padoti",
+    "tupiro",
+    "bidaku",
+    "golabu",
+    "padoti",
+    "bidaku",
+    "padoti",
+    "golabu",
+    "tupiro",
+    "padoti",
+    "tupiro",
+    "golabu",
+    "tupiro",
+    "padoti",
+    "golabu",
+    "tupiro",
+    "golabu",
+    "bidaku",
+    "golabu",
+    "bidaku",
+    "golabu",
+    "padoti",
+    "bidaku",
+    "tupiro",
+    "padoti",
+    "bidaku",
+    "padoti",
+    "golabu",
+    "bidaku",
+    "padoti",
+    "tupiro",
+    "bidaku",
+    "padoti",
+    "tupiro",
+    "bidaku",
+    "golabu",
+    "padoti",
+    "tupiro",
+    "bidaku",
+    "padoti",
+    "golabu",
+    "tupiro",
+    "padoti",
+    "tupiro",
+    "padoti",
+    "tupiro",
+    "golabu",
+    "tupiro",
+    "golabu",
+    "bidaku",
+    "tupiro",
+    "bidaku",
+    "padoti",
+    "bidaku",
+    "golabu",
+    "tupiro",
+    "bidaku",
+    "tupiro",
+    "padoti",
+    "bidaku",
+    "golabu",
+    "bidaku",
+    "padoti",
+    "golabu",
+    "padoti",
+    "bidaku",
+    "tupiro",
+    "padoti",
+    "golabu",
+    "padoti",
+    "tupiro",
+    "padoti",
+    "golabu",
+    "bidaku",
+    "tupiro",
+    "bidaku",
+    "padoti",
+    "tupiro",
+    "golabu",
+    "bidaku",
+    "tupiro",
+    "golabu",
+    "padoti",
+    "tupiro",
+    "bidaku",
+    "tupiro",
+    "padoti",
+    "tupiro",
+    "padoti",
+    "golabu",
+    "tupiro",
+    "padoti",
+    "golabu",
+    "bidaku",
+    "tupiro",
+    "padoti",
+    "golabu",
+    "tupiro",
+    "padoti",
+    "tupiro",
+    "golabu",
+    "bidaku",
+    "golabu",
+    "bidaku",
+    "padoti",
+    "bidaku",
+    "padoti",
+    "tupiro",
+    "padoti",
+    "golabu",
+    "bidaku",
+    "golabu"
+  ],
+  "test_empirical_transitions": [
+    {
+      "from": "tu",
+      "to": "pi",
+      "count": 45,
+      "probability": 1.0
+    },
+    {
+      "from": "pi",
+      "to": "ro",
+      "count": 45,
+      "probability": 1.0
+    },
+    {
+      "from": "ro",
+      "to": "go",
+      "count": 10,
+      "probability": 0.2222222222222222
+    },
+    {
+      "from": "ro",
+      "to": "bi",
+      "count": 16,
+      "probability": 0.35555555555555557
+    },
+    {
+      "from": "ro",
+      "to": "pa",
+      "count": 19,
+      "probability": 0.4222222222222222
+    },
+    {
+      "from": "go",
+      "to": "la",
+      "count": 45,
+      "probability": 1.0
+    },
+    {
+      "from": "la",
+      "to": "bu",
+      "count": 45,
+      "probability": 1.0
+    },
+    {
+      "from": "bu",
+      "to": "tu",
+      "count": 14,
+      "probability": 0.3181818181818182
+    },
+    {
+      "from": "bu",
+      "to": "bi",
+      "count": 18,
+      "probability": 0.4090909090909091
+    },
+    {
+      "from": "bu",
+      "to": "pa",
+      "count": 12,
+      "probability": 0.2727272727272727
+    },
+    {
+      "from": "bi",
+      "to": "da",
+      "count": 45,
+      "probability": 1.0
+    },
+    {
+      "from": "da",
+      "to": "ku",
+      "count": 45,
+      "probability": 1.0
+    },
+    {
+      "from": "ku",
+      "to": "tu",
+      "count": 13,
+      "probability": 0.28888888888888886
+    },
+    {
+      "from": "ku",
+      "to": "go",
+      "count": 18,
+      "probability": 0.4
+    },
+    {
+      "from": "ku",
+      "to": "pa",
+      "count": 14,
+      "probability": 0.3111111111111111
+    },
+    {
+      "from": "pa",
+      "to": "do",
+      "count": 45,
+      "probability": 1.0
+    },
+    {
+      "from": "do",
+      "to": "ti",
+      "count": 45,
+      "probability": 1.0
+    },
+    {
+      "from": "ti",
+      "to": "tu",
+      "count": 17,
+      "probability": 0.37777777777777777
+    },
+    {
+      "from": "ti",
+      "to": "go",
+      "count": 17,
+      "probability": 0.37777777777777777
+    },
+    {
+      "from": "ti",
+      "to": "bi",
+      "count": 11,
+      "probability": 0.24444444444444444
+    }
+  ],
+  "versions": {
+    "python": "3.13.12",
+    "torch": "2.12.0",
+    "numpy": "2.3.5"
+  },
+  "interpretation": "One-pass computational adaptation matching the original nominal syllable count; not a claim of equivalent infant/model learning rates or a replication of infant behavioral responses."
+}
